@@ -77,28 +77,11 @@ function App() {
   }
 
 
-  const [x,setx]=useState(0)
-  const [y,sety]=useState(0)
-
-  useEffect(() => {
-  const handleCursor = (e) => {
-    setx(e.clientX);
-    sety(e.clientY);
-  };
-
-  window.addEventListener('mousemove', handleCursor);
-
-  return () => {
-    window.removeEventListener('mousemove', handleCursor);
-  };
-}, [x, y]);
-
+  
 
   return (
     <>
-    <motion.div className="cursor" animate={{x,y}}
     
-    ></motion.div>
     <div className='container'>
       <div className='slideshow'>
         <AnimatePresence initial={false} custom={direction}>
