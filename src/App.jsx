@@ -96,8 +96,8 @@ function App() {
             key={images[index]}
             custom={direction}
             drag="x"
-            dragListener={false}
-            // dragElastic={0.8}
+
+            dragElastic={0.8}
             onDragEnd={(event,info) =>{
               if(event.offsetX>=200){
                 nextStep()
