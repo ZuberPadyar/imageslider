@@ -86,6 +86,7 @@ button {
   .slideshow {
     width: 90vw;
     aspect-ratio: calc(16 / 16);
+    height: 80vh;
   }
   
   button {
