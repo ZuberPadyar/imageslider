@@ -85,6 +85,7 @@ button {
 @media screen and (max-width: 576px) {
   .slideshow {
     width: 90vw;
+    aspect-ratio: calc(16 / 16);
   }
   
   button {
